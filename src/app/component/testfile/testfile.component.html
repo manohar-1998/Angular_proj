@@ -1,0 +1,38 @@
+<form [formGroup]="addShopFormGroup" (ng-submit)="onSubmit()">
+  <ng-form>
+    <div class="container">
+      <h1>Register</h1>
+      <hr>
+      <label for="firstname"><b>First Name</b></label>
+      <mat-form-field appearance="outline" style="width: 100%;">
+        <input matInput required [(ngModel)]="firstname" name="firstname" placeholder="First Name">
+        <mat-error *ngIf="checkError('firstname', 'required')"> Name is required</mat-error>
+      </mat-form-field>
+      <!-- <span *ngIf="userDetails.firstname.dirty" style="color:red;">
+        
+        <i class="fa fa-exclamation-circle"></i>FirstName Required</span> -->
+      <br><br>
+      <label for="lastname"><b>Last Name</b></label>
+      <input type="text" placeholder="Last Name" name="lastname">
+      <label for="email"><b>Email</b></label>
+      <input class="form-control" type="text" placeholder="Email">
+      <!-- <div *ngIf="userform.controls['email'].invalid && userform.controls['email'].touched" class="alert alert-danger">
+          <div *ngIf="userform.controls['email'].errors?.required">
+         Email is required.
+         </div> -->
+      <!-- </div> -->
+      <!-- <span ng-show="userDetails.$submitted || userDetails.email.dirty">
+        <span class="error" ng-show="userDetails.email.$error.pattern"><i class="fa fa-exclamation-circle"></i>Mismatch Email Format</span>
+    </span> -->
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" ngModel required>
+
+      <!-- <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" ngModel   id="psw-repeat" required> -->
+      <hr>
+
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+  </ng-form>
+</form>

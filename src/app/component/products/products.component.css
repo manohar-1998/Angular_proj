@@ -1,0 +1,50 @@
+.main{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+.item img {
+    width: 64px;
+}
+
+.item {
+    margin: 0px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.item span{
+    display: block;
+}
+
+.item a:hover {
+    color: blue;
+}
+/* ------------ */
+.row {    
+    border: red ridge;
+    width: 100%;
+    margin: 8px 2px 5px 2px;
+  }
+.column {
+  width: 24%;
+  /* border: springgreen ridge; */
+  margin: 10px 3px 10px 10px;
+  /* display: flex; */
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.imagestyles{
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}

@@ -1,0 +1,12 @@
+.Navbar{
+    background-color: palevioletred;
+    /* border: 2px solid greenyellow; */
+    line-height: 40px;
+    display: flex;
+}
+.search{
+    text-align: center;
+    width: 50%;
+    line-height: 30px;
+    /* border: 2px solid rgb(85, 47, 255); */
+}
